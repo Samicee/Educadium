@@ -3,6 +3,7 @@ import { data } from "../data";
 import { ShieldCheck, Heart, BookOpen, Palette, Monitor, Home as HomeIcon, Award, Users, BookMarked, Smile } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { AnimatedText } from "./AnimatedText";
+import heroOutdoorBg from "../assets/images/hero_outdoor_reading_1781515769851.jpg";
 import heroBg from "../assets/images/hero_background_1781508355851.jpg";
 import aboutBg from "../assets/images/about_us_certificate_1781508593345.jpg";
 
@@ -45,7 +46,7 @@ export function Hero() {
       {/* Full Bleed Background Image & Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-           src={heroBg} 
+           src={heroOutdoorBg} 
            alt="Joyful children learning in classroom" 
            className="w-full h-full object-cover absolute inset-0 z-0"
            fetchPriority="high"
