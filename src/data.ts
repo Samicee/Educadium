@@ -1,3 +1,27 @@
+import playgroupImg from "./assets/images/playgroup.jpg";
+import nursery1Img from "./assets/images/nursery_1.jpg";
+import nursery2Img from "./assets/images/nursery_2.jpg";
+import nursery3Img from "./assets/images/nursery_3.jpg";
+import primary1Img from "./assets/images/primary_1.jpg";
+import primary6Img from "./assets/images/primary_6.jpg";
+import principalImg from "./assets/images/african_principal_1781538820073.jpg";
+import deputyImg from "./assets/images/african_deputy_1781538841401.jpg";
+import nurseryTeacherImg from "./assets/images/african_nursery_1781538859590.jpg";
+import ictTeacherImg from "./assets/images/african_ict_1781538883394.jpg";
+import libraryImg from "./assets/images/school_library.jpg";
+import classroomImg from "./assets/images/modern_classroom.jpg";
+import playgroundImg from "./assets/images/outdoor_playground.jpg";
+import scienceLabImg from "./assets/images/science_lab.jpg";
+import graduationImg from "./assets/images/Graduation_day.jpg";
+import sportImg from "./assets/images/Inter_house_sport.jfif";
+import culturalDayImg from "./assets/images/cultural_day.jfif";
+import culturalDay2Img from "./assets/images/cultural_day_2.jfif";
+import ictLabImg from "./assets/images/ict_lab.jfif";
+import creativityImg from "./assets/images/creativity_class.jfif";
+import assemblyImg from "./assets/images/assembly_ground.jfif";
+import awardDayImg from "./assets/images/award_day.jfif";
+import admissionOpenImg from "./assets/images/admission_open.jfif";
+
 export const data = {
   hero: {
     badge: "NERDC Accredited · Established 2008",
@@ -39,12 +63,12 @@ We would love for your child to be next.`
     headline: "The Right Programme for Every Stage of Your Child's Journey",
     subcopy: "From their very first day in our nursery to the confident Primary 6 pupil ready to conquer secondary school — we walk every step with them.",
     items: [
-      { name: "Playgroup / Baby Class", color: "emerald-green", age: "2 – 3 years", image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80", highlights: ["Sensory play & early motor development", "Introduction to letters, numbers, and colours", "Songs, storytelling, and creative play", "Safe ratio of 1 teacher to 8 children"] },
-      { name: "Nursery 1", color: "warm-gold", age: "3 – 4 years", image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80", highlights: ["Phonics and early reading foundations", "Number recognition and basic counting", "Social skills and emotional regulation", "Daily outdoor playtime & structured activities"] },
-      { name: "Nursery 2", color: "royal-blue", age: "4 – 5 years", image: "https://images.unsplash.com/photo-1509062522246-37365287e0fa?w=800&q=80", highlights: ["Reading readiness and sight words", "Basic mathematics and logical reasoning", "ICT introduction with tablets and apps", "Public speaking, drama, and confidence building"] },
-      { name: "Nursery 3 / Kindergarten", color: "emerald-green", age: "5 – 6 years", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a96?w=800&q=80", highlights: ["Full literacy and numeracy readiness", "Science exploration and curiosity labs", "Introduction to state languages", "Smooth transition preparation into Primary 1"] },
-      { name: "Primary 1 – 3 (Lower Primary)", color: "warm-gold", age: "6 – 9 years", image: "https://images.unsplash.com/photo-1427504494785-306acacdc2fa?w=800&q=80", highlights: ["Full NERDC primary curriculum", "English Language, Maths, Basic Science", "Weekly computer classes and library time", "Inter-house sports, cultural day, and arts"] },
-      { name: "Primary 4 – 6 (Upper Primary)", color: "royal-blue", age: "9 – 12 years", image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80", highlights: ["NERDC curriculum with exam preparation", "Weekly debates, essay competitions, STEM", "School prefect leadership training", "Graduation & valedictory ceremony"] },
+      { name: "Playgroup / Baby Class", color: "emerald-green", age: "2 – 3 years", image: playgroupImg, highlights: ["Sensory play & early motor development", "Introduction to letters, numbers, and colours", "Songs, storytelling, and creative play", "Safe ratio of 1 teacher to 8 children"] },
+      { name: "Nursery 1", color: "warm-gold", age: "3 – 4 years", image: nursery1Img, highlights: ["Phonics and early reading foundations", "Number recognition and basic counting", "Social skills and emotional regulation", "Daily outdoor playtime & structured activities"] },
+      { name: "Nursery 2", color: "royal-blue", age: "4 – 5 years", image: nursery2Img, highlights: ["Reading readiness and sight words", "Basic mathematics and logical reasoning", "ICT introduction with tablets and apps", "Public speaking, drama, and confidence building"] },
+      { name: "Nursery 3 / Kindergarten", color: "emerald-green", age: "5 – 6 years", image: nursery3Img, highlights: ["Full literacy and numeracy readiness", "Science exploration and curiosity labs", "Introduction to state languages", "Smooth transition preparation into Primary 1"] },
+      { name: "Primary 1 – 3 (Lower Primary)", color: "warm-gold", age: "6 – 9 years", image: primary1Img, highlights: ["Full NERDC primary curriculum", "English Language, Maths, Basic Science", "Weekly computer classes and library time", "Inter-house sports, cultural day, and arts"] },
+      { name: "Primary 4 – 6 (Upper Primary)", color: "royal-blue", age: "9 – 12 years", image: primary6Img, highlights: ["NERDC curriculum with exam preparation", "Weekly debates, essay competitions, STEM", "School prefect leadership training", "Graduation & valedictory ceremony"] },
     ]
   },
   philosophy: {
@@ -62,11 +86,11 @@ We would love for your child to be next.`
     headline: "A Space Designed to Inspire Curiosity at Every Corner",
     subcopy: "Walk through our gates and you will understand immediately: every inch of Educadium was designed with one person in mind — your child.",
     items: [
-      { title: "Modern Classrooms", text: "Smart boards, colourful learning walls, child-sized furniture, natural light", image: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80" },
+      { title: "Modern Classrooms", text: "Smart boards, colourful learning walls, child-sized furniture, natural light", image: classroomImg },
       { title: "ICT / Computer Lab", text: "30 HP desktop computers, high-speed internet, coding & digital literacy curriculum", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80" },
-      { title: "School Library", text: "2,000+ books, reading nooks, weekly library hour for every class", image: "https://images.unsplash.com/photo-1568667256549-094345857637?w=800&q=80" },
-      { title: "Outdoor Playground", text: "Age-appropriate equipment, rubberized flooring, supervised at all times", image: "https://images.unsplash.com/photo-1520637102912-2df6bb2aec6d?w=800&q=80" },
-      { title: "Science & Discovery Lab", text: "Hands-on experiments for Primary 3 and above", image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&q=80" },
+      { title: "School Library", text: "2,000+ books, reading nooks, weekly library hour for every class", image: libraryImg },
+      { title: "Outdoor Playground", text: "Age-appropriate equipment, rubberized flooring, supervised at all times", image: playgroundImg },
+      { title: "Science & Discovery Lab", text: "Hands-on experiments for Primary 3 and above", image: scienceLabImg },
       { title: "School Hall / Assembly Ground", text: "Covered hall for assemblies, events, drama, and celebrations", image: "https://images.unsplash.com/photo-1577896851231-70efbf5186ad?w=800&q=80" },
       { title: "Cafeteria", text: "Nutritious, Nigerian-approved school meals. Allergy-aware menu.", image: "https://images.unsplash.com/photo-1587847427847-19cefb35b62e?w=800&q=80" },
       { title: "Sick Bay", text: "Qualified nurse present daily. First aid trained staff across all classes.", image: "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80" },
@@ -78,10 +102,10 @@ We would love for your child to be next.`
     headline: "The Hearts Behind Every Brilliant Mind at Educadium",
     subcopy: "We don't hire people who can teach. We hire people who love children — and then make sure they are exceptional teachers too.",
     members: [
-      { name: "Mrs. Adaeze Okonkwo, M.Ed", title: "Head of School / Principal", bio: "15 years in early childhood education. Former education consultant for UNICEF Nigeria. Believes every child deserves a teacher who believes in them first.", image: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&q=80" },
-      { name: "Mr. Chukwuemeka Eze, B.Ed", title: "Deputy Principal & Head of Primary", bio: "Passionate about turning reluctant readers into bookworms. Coach for our inter-school debate team. 3× Regional Best Teacher Award.", image: "https://images.unsplash.com/photo-1506803682981-6e718a9dd3ee?w=400&q=80" },
-      { name: "Miss Fatimah Al-Hassan, NCE", title: "Head of Nursery Department", bio: "10 years nurturing our youngest learners. Certified Montessori practitioner. Fluent in three Nigerian languages.", image: "https://images.unsplash.com/photo-1531123897727-8f129e1bfa82?w=400&q=80" },
-      { name: "Mr. Babatunde Olatunji, B.Sc, PGDE", title: "ICT & STEM Coordinator", bio: "Former software developer turned teacher. On a mission to make every Educadium child digitally confident before age 12.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" },
+      { name: "Mrs. Adaeze Okonkwo, M.Ed", title: "Head of School / Principal", bio: "15 years in early childhood education. Former education consultant for UNICEF Nigeria. Believes every child deserves a teacher who believes in them first.", image: principalImg },
+      { name: "Mr. Chukwuemeka Eze, B.Ed", title: "Deputy Principal & Head of Primary", bio: "Passionate about turning reluctant readers into bookworms. Coach for our inter-school debate team. 3× Regional Best Teacher Award.", image: deputyImg },
+      { name: "Miss Fatimah Al-Hassan, NCE", title: "Head of Nursery Department", bio: "10 years nurturing our youngest learners. Certified Montessori practitioner. Fluent in three Nigerian languages.", image: nurseryTeacherImg },
+      { name: "Mr. Babatunde Olatunji, B.Sc, PGDE", title: "ICT & STEM Coordinator", bio: "Former software developer turned teacher. On a mission to make every Educadium child digitally confident before age 12.", image: ictTeacherImg },
     ]
   },
   testimonials: {
@@ -103,14 +127,13 @@ We would love for your child to be next.`
     subcopy: "From morning assembly to afternoon clubs, every hour at Educadium is designed to light something up in your child.",
     images: [
       { caption: "Science Fair Day — exploring, discovering, creating", image: "https://images.unsplash.com/photo-1564069114553-7215e1ff1890?w=800&q=80" },
-      { caption: "Graduation Day 2024 — we are so proud of these stars", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" },
+      { caption: "Graduation Day 2024 — we are so proud of these stars", image: graduationImg },
       { caption: "Reading Hour — because every great mind starts with a great book", image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" },
-      { caption: "Inter-House Sports — teamwork, fitness, and pure joy", image: "https://images.unsplash.com/photo-1526676037777-05a232554f77?w=800&q=80" },
-      { caption: "Cultural Day — celebrating Nigeria's rich heritage", image: "https://images.unsplash.com/photo-1604882103553-73136279f6f2?w=800&q=80" },
-      { caption: "ICT Lab — our future digital leaders at work", image: "https://images.unsplash.com/photo-1571260899304-42507011ec70?w=800&q=80" },
-      { caption: "Art & Creativity Class — expression has no limits here", image: "https://images.unsplash.com/photo-1605705307527-be089b0bbdcf?w=800&q=80" },
-      { caption: "Morning Assembly — values, discipline, and community", image: "https://images.unsplash.com/photo-1503676260728-1c00da094a96?w=800&q=80" },
-      { caption: "Christmas Concert 2024 — a night to remember", image: "https://images.unsplash.com/photo-1543598715-dd0e1eecaae2?w=800&q=80" },
+      { caption: "Inter-House Sports — teamwork, fitness, and pure joy", image: sportImg },
+      { caption: "Cultural Day — celebrating Nigeria's rich heritage", image: culturalDayImg },
+      { caption: "ICT Lab — our future digital leaders at work", image: ictLabImg },
+      { caption: "Art & Creativity Class — expression has no limits here", image: creativityImg },
+      { caption: "Morning Assembly — values, discipline, and community", image: assemblyImg },
     ]
   },
   admissions: {
@@ -128,9 +151,9 @@ We would love for your child to be next.`
     label: "News & Events",
     headline: "What's Happening at Educadium",
     items: [
-      { date: "June 5, 2025", category: "Event", title: "Educadium Wins 3rd Consecutive Regional Science Fair Trophy", excerpt: "Our Primary 5 and 6 students dominated this year's Abuja Regional Science Fair, taking home gold in three categories...", image: "https://images.unsplash.com/photo-1544322891-b3b3e64b73fd?w=800&q=80" },
-      { date: "May 20, 2025", category: "School Life", title: "Cultural Day 2025: A Celebration of Nigeria's Colours", excerpt: "Over 400 students and parents gathered for our annual Cultural Day celebration — a sea of adire, aso-oke, and pure Nigerian joy...", image: "https://images.unsplash.com/photo-1520697779782-fb590a9ba6ad?w=800&q=80" },
-      { date: "May 8, 2025", category: "Admissions", title: "2025/2026 Admissions Now Open — Apply Before July 31", excerpt: "We are now accepting applications for the upcoming academic year. Spaces fill quickly — book your school tour and secure your child's place today...", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80" },
+      { date: "June 5, 2025", category: "Event", title: "Educadium Wins 3rd Consecutive Regional Science Fair Trophy", excerpt: "Our Primary 5 and 6 students dominated this year's Abuja Regional Science Fair, taking home gold in three categories...", image: awardDayImg },
+      { date: "May 20, 2025", category: "School Life", title: "Cultural Day 2025: A Celebration of Nigeria's Colours", excerpt: "Over 400 students and parents gathered for our annual Cultural Day celebration — a sea of adire, aso-oke, and pure Nigerian joy...", image: culturalDay2Img },
+      { date: "May 8, 2025", category: "Admissions", title: "2025/2026 Admissions Now Open — Apply Before July 31", excerpt: "We are now accepting applications for the upcoming academic year. Spaces fill quickly — book your school tour and secure your child's place today...", image: admissionOpenImg },
     ]
   },
   faqs: {

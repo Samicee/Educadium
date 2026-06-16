@@ -3,9 +3,8 @@ import { data } from "../data";
 import { ShieldCheck, Heart, BookOpen, Palette, Monitor, Home as HomeIcon, Award, Users, BookMarked, Smile } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { AnimatedText } from "./AnimatedText";
-import heroOutdoorBg from "../assets/images/hero_outdoor_reading_1781515769851.jpg";
-import heroBg from "../assets/images/hero_background_1781508355851.jpg";
-import aboutBg from "../assets/images/about_us_certificate_1781508593345.jpg";
+import heroBg from "../assets/images/Background_image.png";
+import aboutUsImg from "../assets/images/about_us.jpg";
 
 const FadeIn = ({ children, delay = 0, className = "" }: any) => (
   <motion.div
@@ -46,9 +45,9 @@ export function Hero() {
       {/* Full Bleed Background Image & Overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
-           src={heroOutdoorBg} 
+           src={heroBg} 
            alt="Joyful children learning in classroom" 
-           className="w-full h-full object-cover absolute inset-0 z-0"
+           className="absolute inset-0 w-full h-full object-cover"
            fetchPriority="high"
         />
         <div className="absolute inset-0 bg-[#0A1628]/60 backdrop-blur-[2px]"></div>
@@ -71,7 +70,8 @@ export function Hero() {
            <AnimatedText 
              as="h1"
              text={data.hero.headline}
-             className="text-white text-5xl md:text-7xl lg:text-[80px] font-black leading-[1.1] mb-6 whitespace-pre-line font-display tracking-tight drop-shadow-lg"
+             className="text-5xl md:text-7xl lg:text-[80px] font-black leading-[1.1] mb-6 whitespace-pre-line font-display tracking-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]"
+             style={{ color: '#FDE047' }}
              delay={0}
            />
            
@@ -140,8 +140,7 @@ export function Welcome() {
         <FadeIn delay={0.2} className="relative">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle,#F4A91D_0%,transparent_50%)] opacity-10 blur-3xl rounded-full z-0"></div>
           <div className="relative z-10 w-full aspect-square max-w-[500px] mx-auto">
-            <img src={aboutBg} alt="Students learning together" className="w-[80%] h-[80%] object-cover rounded-[32px] shadow-2xl absolute top-0 right-0 z-10" loading="lazy" />
-            <img src="https://images.unsplash.com/photo-1577896851231-70efbf5186ad?auto=format,compress&w=600&q=80" alt="Teacher reading to children" className="w-[60%] h-[60%] object-cover rounded-[32px] shadow-xl border-4 border-white absolute bottom-0 left-0 z-20" loading="lazy" />
+            <img src={aboutUsImg} alt="About Us" className="w-full h-full object-cover rounded-[32px] shadow-2xl relative z-10" loading="lazy" />
             <div className="absolute top-[40%] left-[-15%] bg-white p-4 rounded-[24px] shadow-[0_4px_24px_rgba(13,46,110,0.15)] flex items-center gap-3 animate-bounce z-30">
                <span className="text-3xl">🏆</span>
                <div className="font-bold text-[#0D2E6E] text-sm leading-tight">School of<br/>Excellence 2024</div>
@@ -248,7 +247,7 @@ export function Programs() {
                  <FadeIn key={i} delay={i * 0.1} className="min-w-[85vw] md:min-w-[400px] lg:min-w-0 snap-start">
                     <div className="bg-white rounded-[32px] shadow-[0_4px_24px_rgba(13,46,110,0.06)] overflow-hidden h-full flex flex-col group border border-gray-100">
                        <div className="relative h-64 overflow-hidden">
-                          <img src={prog.image + "&auto=format,compress"} alt={prog.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                          <img src={prog.image} alt={prog.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                           <div className="absolute bottom-0 left-0 right-0 h-2" style={{ backgroundColor: colorHex }}></div>
                        </div>
                        <div className="p-8 flex-grow flex flex-col">

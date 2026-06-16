@@ -1,14 +1,14 @@
 import { motion } from "motion/react";
 import React from "react";
 
-export const AnimatedText = ({ text, className = "", delay = 0, as: Tag = "div" }: { text: string, className?: string, delay?: number, as?: any }) => {
+export const AnimatedText = ({ text, className = "", delay = 0, as: Tag = "div", style = {} }: { text: string, className?: string, delay?: number, as?: any, style?: React.CSSProperties }) => {
    const regex = /(\s+)/;
    const parts = typeof text === "string" ? text.split(regex) : [];
    
    let wordCount = 0;
 
    return (
-    <Tag className={className}>
+    <Tag className={className} style={style}>
        {parts.map((part, i) => {
           if (part.match(/\n/)) {
              return <br key={i} />;

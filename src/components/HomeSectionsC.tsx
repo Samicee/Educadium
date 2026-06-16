@@ -3,6 +3,7 @@ import { data } from "../data";
 import { useState } from "react";
 import { ChevronDown, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { AnimatedText } from "./AnimatedText";
+import bestStartImg from "../assets/images/best_start_in_life-1.jfif";
 
 const FadeIn = ({ children, delay = 0, className = "" }: any) => (
   <motion.div
@@ -31,7 +32,7 @@ export function Admissions() {
               <AnimatedText 
                 as="h2" 
                 text={data.admissions.headline} 
-                className="text-white text-4xl lg:text-5xl font-display font-bold leading-tight mb-6" 
+                className="text-[#FDE047] text-4xl lg:text-5xl font-display font-bold leading-tight mb-6" 
               />
               <p className="text-white/80 text-lg lg:text-xl">{data.admissions.subcopy}</p>
             </FadeIn>
@@ -89,7 +90,7 @@ export function News() {
                <FadeIn key={i} delay={i * 0.1}>
                   <div className="bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col h-full group">
                      <div className="relative h-56 overflow-hidden">
-                        <img src={item.image + "&auto=format,compress"} alt={item.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                        <img src={item.image} alt={item.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                      </div>
                      <div className="p-8 flex-grow flex flex-col">
                         <div className="flex items-center gap-3 text-xs text-[#7A8FA8] font-bold uppercase tracking-wider mb-4">
@@ -175,7 +176,7 @@ export function CTA() {
              <div className="inline-block bg-[#F4A91D] text-[#0A1628] text-xs font-bold uppercase px-3 py-1 rounded-full mb-8 self-start">
                LIMITED SPACES AVAILABLE — 2025/2026
              </div>
-             <h2 className="text-white text-4xl lg:text-5xl font-display font-bold leading-tight mb-6">
+             <h2 className="text-[#FDE047] text-4xl lg:text-5xl font-display font-bold leading-tight mb-6">
                Give Your Child the<br/>Best Start in Life.
              </h2>
              <p className="text-white/80 text-lg leading-relaxed mb-8">
@@ -190,7 +191,7 @@ export function CTA() {
           </div>
           <div className="w-full md:w-1/2 relative min-h-[400px]">
              <div className="absolute inset-0 bg-[#0D2E6E] w-1/4 -left-[1px] skew-x-[-12deg] origin-top hidden md:block z-10"></div>
-             <img src="https://images.unsplash.com/photo-1544322891-b3b3e64b73fd?auto=format,compress&w=800&q=80" alt="Smiling student" className="w-full h-full object-cover absolute inset-0 z-0" loading="lazy" />
+             <img src={bestStartImg} alt="Smiling student" className="w-full h-full object-cover absolute inset-0 z-0" loading="lazy" />
           </div>
        </div>
     </section>

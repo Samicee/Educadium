@@ -33,7 +33,7 @@ export function Philosophy() {
               <AnimatedText 
                 as="h2" 
                 text={data.philosophy.headline} 
-                className="text-white text-4xl lg:text-5xl font-display font-bold leading-tight mb-6" 
+                className="text-[#FDE047] text-4xl lg:text-5xl font-display font-bold leading-tight mb-6 pb-2" 
               />
               <p className="text-white/80 text-lg lg:text-xl">{data.philosophy.subcopy}</p>
             </FadeIn>
@@ -44,10 +44,10 @@ export function Philosophy() {
                return (
                  <FadeIn key={i} delay={i * 0.1}>
                     <div className="text-center">
-                       <div className="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center mx-auto mb-6">
+                       <div className="w-16 h-16 rounded-full bg-white/10 text-[#F4A91D] flex items-center justify-center mx-auto mb-6">
                           <Icon size={32} />
                        </div>
-                       <h3 className="text-2xl font-display text-white font-bold mb-4">{item.title}</h3>
+                       <h3 className="text-2xl font-display text-[#F4A91D] font-bold mb-4 pb-1">{item.title}</h3>
                        <p className="text-white/80 leading-relaxed">{item.text}</p>
                     </div>
                  </FadeIn>
@@ -83,7 +83,7 @@ export function Facilities() {
             {data.facilities.items.map((fac, i) => (
               <FadeIn key={i} delay={(i % 3) * 0.1} className="break-inside-avoid">
                  <div className="relative group rounded-[32px] overflow-hidden shadow-sm">
-                    <img src={fac.image + "&auto=format,compress"} alt={fac.title} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                    <img src={fac.image} alt={fac.title} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/90 via-[#0A1628]/40 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 p-6">
                        <h3 className="text-xl font-display text-white font-bold mb-2">{fac.title}</h3>
@@ -118,7 +118,7 @@ export function Team() {
                <FadeIn key={i} delay={i * 0.1}>
                   <div className="text-center group">
                      <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-[#EEF3FB] group-hover:border-[#F4A91D] transition-colors duration-300">
-                        <img src={member.image + "&auto=format,compress"} alt={member.name} className="w-full h-full object-cover" loading="lazy" />
+                        <img src={member.image} alt={member.name} className="w-full h-full object-cover" loading="lazy" />
                      </div>
                      <h3 className="text-xl font-display font-bold text-[#0D2E6E] mb-1">{member.name}</h3>
                      <div className="text-[#F4A91D] text-xs font-bold uppercase tracking-wider mb-4">{member.title}</div>
@@ -219,7 +219,7 @@ export function Gallery() {
             {data.gallery.images.map((img, i) => (
                <FadeIn key={i} delay={(i % 3) * 0.1} className="break-inside-avoid">
                   <div className="relative group rounded-[32px] overflow-hidden shadow-sm cursor-pointer">
-                     <img src={img.image + "&auto=format,compress"} alt={img.caption} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                     <img src={img.image} alt={img.caption} className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                      <div className="absolute inset-0 bg-[#0D2E6E]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center">
                         <p className="text-white font-medium text-sm lg:text-base translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                            {img.caption}
